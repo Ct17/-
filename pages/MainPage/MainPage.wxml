@@ -1,0 +1,69 @@
+<!--pages/MainPage/MainPage.wxml-->
+<view class='MainPage_container'>
+  
+  <view class='MainPage'>
+    <view class='MianPage_bd'>
+      <view class='item_container'>
+        <navigator url="projectApply/projectApply" class='item_content_container'>
+          <view class='item_hd_container'>
+            <image src='/images/project.png' class='item_image'></image>
+          </view>
+          <view class='item_bd_container'>项目申请</view>
+          <view class='item_ft_container'>
+           <image src='/images/nav.png' class='item_image'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>  
+  </view>    
+
+  <view class='MainPage'>
+    <view class='MianPage_bd'>
+      <view class='item_container'>
+        <navigator url="Recruitment/Recruitment" class='item_content_container'>
+          <view class='item_hd_container'>
+            <image src='/images/Recruitment.png' class='item_image'></image>
+          </view>
+          <view class='item_bd_container'>招新报名</view>
+          <view class='item_ft_container'>
+           <image src='/images/nav.png' class='item_image'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>  
+  </view>  
+
+  <view class='MainPage'>
+    <view class='MianPage_bd'>
+      <view class='item_container'>
+        <navigator url="interview/interview" class='item_content_container'>
+          <view class='item_hd_container'>
+            <image src='/images/interview.png' class='item_image'></image>
+          </view>
+          <view class='item_bd_container'>面试安排</view>
+          <view class='item_ft_container'>
+           <image src='/images/nav.png' class='item_image'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>  
+  </view> 
+
+  <view class='MainPage'>
+    <view class='MianPage_bd'>
+      <view class='item_container'>
+        <navigator url="interview/interview" class='item_content_container'>
+          <view class='item_hd_container'>
+            <image src='/images/interview.png' class='item_image'></image>
+          </view>
+          <view class='item_bd_container'>成员介绍</view>
+          <view class='item_ft_container'>
+           <image src='/images/nav.png' class='item_image'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>  
+  </view>   
+
+
+</view>
