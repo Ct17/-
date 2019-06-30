@@ -3,6 +3,8 @@
     "pages/MainPage/MainPage",
     "pages/MainPage/projectApply/projectApply",
     "pages/MainPage/Recruitment/Recruitment",
+    "pages/MainPage/interview/interview",
+    "pages/MainPage/member/member",
     "pages/ShowProject/ShowProject",
     "pages/HomePage/HomePage",
     "pages/index/index",
