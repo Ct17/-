@@ -1,1 +1,110 @@
 /* pages/projectaApply/projectApply.wxss */
+
+.feedback_container {
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.input_style {
+  height: 75rpx;
+  width: 700rpx;
+  margin-top: 25rpx;
+  border-radius: 10rpx;
+  border: 3rpx solid #dce4ec;
+  padding: 6rpx 18rpx;
+  box-sizing: border-box;
+  background-color: #eee;
+  font-size: 30rpx;
+}
+
+.textarea_style {
+  width: 700rpx;
+  margin-top: 25rpx;
+  border-radius: 10rpx;
+  border: 3rpx solid #dce4ec;
+  padding: 16rpx 18rpx;
+  box-sizing: border-box;
+  background-color: #eee;
+  font-size: 30rpx;
+}
+
+.btn_submit {
+  height: 75rpx;
+  width: 700rpx;
+  margin-top: 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rpx;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  background-color: #36ab60;
+  color: #f8f8f8;
+}
+
+.add_image_container {
+  width: 700rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image_container {
+  width: 190rpx;
+  height: 190rpx;
+  margin-top: 25rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.button_bind {
+  color: #34495e;
+  text-decoration: underline;
+}
+
+.button_change {
+  color: #34495e;
+  text-decoration: underline;
+}
+
+.button_cancel {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+.button_inverse {
+  background-color: #34495e;
+}
+
+.button_primary {
+  background-color: #1abc9c;
+}
+
+.button_info {
+  background-color: #3498db;
+}
+
+.button_danger {
+  background-color: #e74c3c;
+}
+
+.button_success {
+  background-color: #2ecc71;
+}
+
+.button_warning {
+  background-color: #f1c40f;
+}
+
+.button_disabled {
+  background-color: #95a5a6;
+}
