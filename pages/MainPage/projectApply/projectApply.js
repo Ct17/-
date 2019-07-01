@@ -5,14 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    date: '2019-07-01',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    function bindDateChange(e) {
+      this.setData({
+        date: e.detail.value
+      })
+    }
   },
 
   /**

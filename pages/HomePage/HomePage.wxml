@@ -1,2 +1,6 @@
 <!--pages/HomePage/HomePage.wxml-->
 <text>pages/HomePage/HomePage.wxml</text>
+<view class="my_info">
+  <open-data type="userAvatarUrl" class="my_photo"></open-data>
+  <open-data type="userNickName"></open-data>
+</view>
