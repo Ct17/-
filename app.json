@@ -1,12 +1,16 @@
 {
   "pages": [
+    "pages/HomePage/HomePage",
     "pages/MainPage/MainPage",
+    "pages/HomePage/MyProject/MyProject",
+    "pages/HomePage/InsertMember/InsertMember",
+    "pages/bind/bind",
     "pages/MainPage/projectApply/projectApply",
     "pages/MainPage/Recruitment/Recruitment",
     "pages/MainPage/interview/interview",
     "pages/MainPage/member/member",
     "pages/ShowProject/ShowProject",
-    "pages/HomePage/HomePage",
+    
     "pages/index/index",
     "pages/logs/logs"
     

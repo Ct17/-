@@ -1,6 +1,40 @@
 <!--pages/HomePage/HomePage.wxml-->
-<text>pages/HomePage/HomePage.wxml</text>
 <view class="my_info">
   <open-data type="userAvatarUrl" class="my_photo"></open-data>
   <open-data type="userNickName"></open-data>
+</view>
+<view class='HomePage_container'>
+    <view class='HomePage'>
+    <view class='HomePage_bd'>
+      <view class='item_container'>
+        <navigator url="MyProject/MyProject" class='item_content_container'>
+          <view class='item_hd_container'>
+            <image src='/images/myproject.png' class='item_image'></image>
+          </view>
+          <view class='item_bd_container'>我的项目</view>
+          <view class='item_ft_container'>
+           <image src='/images/nav.png' class='item_image'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>  
+  </view>  
+
+      <view class='HomePage'>
+    <view class='HomePage_bd'>
+      <view class='item_container'>
+        <navigator url="InsertMember/InsertMember" class='item_content_container'>
+          <view class='item_hd_container'>
+            <image src='/images/insertmember.png' class='item_image'></image>
+          </view>
+          <view class='item_bd_container'>成员录入</view>
+          <view class='item_ft_container'>
+           <image src='/images/nav.png' class='item_image'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>  
+  </view> 
+
+
 </view>
