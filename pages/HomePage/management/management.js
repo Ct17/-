@@ -1,14 +1,14 @@
-// pages/ShowProject/ShowProject.js
-var GetProjectUrl = require('../../config.js').GetProjectUrl;
-
+var GetProjectUrl = require('../../../config.js').GetProjectUrl;
+var PassProjectUrl = require('../../../config.js').PassProjectUrl;
+var FinishProjectUrl = require('../../../config.js').FinishProjectUrl;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    project:"",
-    hasproject:false
+    project: "",
+    hasproject: false
   },
 
   /**
@@ -77,18 +77,18 @@ Page({
   onShareAppMessage: function () {
 
   },
-  getproject:function(){
-    var that= this;
+  getproject: function () {
+    var that = this;
     wx.request({
       url: GetProjectUrl,
-      data:{
+      data: {
 
       },
-      success:function(res){
+      success: function (res) {
         wx.hideLoading();
         console.log(res.data);
         that.setData({
-          project:res.data
+          project: res.data
         })
         if (that.data.project != "") {
           that.setData({
@@ -102,5 +102,58 @@ Page({
         console.log(that.data.project)
       }
     })
-  }
+  },
+
+    formSubmit: function (e) {
+    console.log(e)
+    wx.showLoading({
+      title: '正在上传',
+    })
+    wx.getStorage({
+      key: 'openid',
+      success: function (res) {
+        wx.request({
+          url: PassProjectUrl,
+          data: {
+            openid: res.data,
+            pass: e.detail.value.pass,
+          },
+          success: function (res1) {
+            console.log(res1.data);
+            wx.hideLoading();
+            wx.showToast({
+              title: '上传成功',
+            })
+          }
+        })
+      },
+    })
+  }, 
+
+    formSubmit1: function (e) {
+    console.log(e)
+    wx.showLoading({
+      title: '正在上传',
+    })
+    wx.getStorage({
+      key: 'openid',
+      success: function (res) {
+        wx.request({
+          url: FinishProjectUrl,
+          data: {
+            openid: res.data,
+            finish: e.detail.value.finish,
+          },
+          success: function (res1) {
+            console.log(res1.data);
+            wx.hideLoading();
+            wx.showToast({
+              title: '上传成功',
+            })
+          }
+        })
+      },
+    })
+  }  
+
 })

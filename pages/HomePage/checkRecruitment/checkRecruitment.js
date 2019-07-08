@@ -1,5 +1,4 @@
-// pages/ShowProject/ShowProject.js
-var GetProjectUrl = require('../../config.js').GetProjectUrl;
+var GetRecruitmentUrl = require('../../../config.js').GetRecruitmentUrl;
 
 Page({
 
@@ -7,8 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    project:"",
-    hasproject:false
+    recruitment: "",
+    hasrecruitment: false
   },
 
   /**
@@ -16,7 +15,7 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    that.getproject();
+    that.getrecruitment();
   },
 
   /**
@@ -55,7 +54,7 @@ Page({
       title: '加载中',
       icon: 'loading'
     })
-    this.getproject();
+    this.getrecruitment();
   },
   stopPullDownRefresh: function () {
     wx.stopPullDownRefresh({
@@ -77,29 +76,29 @@ Page({
   onShareAppMessage: function () {
 
   },
-  getproject:function(){
-    var that= this;
+  getrecruitment: function () {
+    var that = this;
     wx.request({
-      url: GetProjectUrl,
-      data:{
+      url: GetRecruitmentUrl,
+      data: {
 
       },
-      success:function(res){
+      success: function (res) {
         wx.hideLoading();
         console.log(res.data);
         that.setData({
-          project:res.data
+          recruitment: res.data
         })
         if (that.data.project != "") {
           that.setData({
-            hasproject: true
+            hasrecruitment: true
           })
         } else {
           that.setData({
-            hasproject: false
+            hasrecruitment: false
           })
         }
-        console.log(that.data.project)
+        console.log(that.data.recruitment)
       }
     })
   }

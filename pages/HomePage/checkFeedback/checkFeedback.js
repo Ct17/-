@@ -1,5 +1,4 @@
-// pages/ShowProject/ShowProject.js
-var GetProjectUrl = require('../../config.js').GetProjectUrl;
+var GetFeedbackUrl = require('../../../config.js').GetFeedbackUrl;
 
 Page({
 
@@ -7,8 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    project:"",
-    hasproject:false
+    feedback: "",
+    hasfeedback: false
   },
 
   /**
@@ -16,7 +15,7 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    that.getproject();
+    that.getfeedback();
   },
 
   /**
@@ -55,7 +54,7 @@ Page({
       title: '加载中',
       icon: 'loading'
     })
-    this.getproject();
+    this.getfeedback();
   },
   stopPullDownRefresh: function () {
     wx.stopPullDownRefresh({
@@ -77,29 +76,29 @@ Page({
   onShareAppMessage: function () {
 
   },
-  getproject:function(){
-    var that= this;
+  getfeedback: function () {
+    var that = this;
     wx.request({
-      url: GetProjectUrl,
-      data:{
+      url: GetFeedbackUrl,
+      data: {
 
       },
-      success:function(res){
+      success: function (res) {
         wx.hideLoading();
         console.log(res.data);
         that.setData({
-          project:res.data
+          feedback: res.data
         })
         if (that.data.project != "") {
           that.setData({
-            hasproject: true
+            hasfeedback: true
           })
         } else {
           that.setData({
-            hasproject: false
+            hasfeedback: false
           })
         }
-        console.log(that.data.project)
+        console.log(that.data.feedback)
       }
     })
   }

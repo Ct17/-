@@ -1,0 +1,34 @@
+<!--pages/HomePage/checkFeedback/checkFeedback.wxml-->
+<block wx:if="{{hasfeedback}}">
+  <view class="feedback_info_container">
+    <view wx:for="{{feedback}}" class="feedback_info_box">
+      <view class="feedback_info_inside">
+        <view class="feedback_info_hd">
+          <view class='feedback_info_name'>
+            <view class='feedback_info_class_name'>{{item.name}} {{item.phone}} {{item.time}}</view>
+          </view>
+        </view>
+        <view class="feedback_info_ft">
+          <view class='feedback_info_other'>
+            <text decode="{{true}}" space="{{true}}">{{item.description}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="feedback_info_container">
+    <view class="feedback_info_box">
+      <view class="feedback_info_inside">
+        <view class="feedback_info_hd">
+          <view class='feedback_info_name'>
+            <view class='feedback_info_class_name'>暂无留言</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+
+

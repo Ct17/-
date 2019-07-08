@@ -1,12 +1,12 @@
-/* pages/ShowProject/ShowProject.wxss */
-.no_project {
+/* pages/HomePage/checkRecruitment/checkRecruitment.wxss */
+.no_recruitment {
   width: 100%;
   position: absolute;
   top: 0;
   z-index: -1;
 }
 
-.project_info_container {
+.recruitment_info_container {
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -14,7 +14,7 @@
   padding-top: 25rpx;
 }
 
-.project_info_box {
+.recruitment_info_box {
   width: 700rpx;
   background-color: white;
   border-radius: 10rpx;
@@ -22,12 +22,12 @@
   box-shadow: 0 0 15rpx #ddd;
 }
 
-.project_info_inside {
+.recruitment_info_inside {
   width: 650rpx;
   margin-left: 25rpx;
 }
 
-.project_info_hd {
+.recruitment_info_hd {
   height: 70rpx;
   display: flex;
   flex-flow: row;
@@ -36,7 +36,7 @@
   border-bottom: 1rpx solid #25da3b;
 }
 
-.project_info_name {
+.recruitment_info_name {
   width: 100%;
   display: flex;
   flex-flow: row;
@@ -44,20 +44,20 @@
   align-items: center;
 }
 
-.project_info_class_name {
+.recruitment_info_class_name {
   font-size: 30rpx;
 }
 
-.project_info_teacher_name {
+.recruitment_info_teacher_name {
   font-size: 24rpx;
   color: #7f8c8d;
 }
 
-.project_info_end_image {
+.recruitment_info_end_image {
   height: 50rpx;
 }
 
-.project_info_end_style {
+.recruitment_info_end_style {
   opacity: 0.4;
 }
 
@@ -77,12 +77,12 @@
   color: #F5CB5C;
 }
 
-.project_info_bd {
+.recruitment_info_bd {
   padding-top: 10rpx;
   padding-bottom: 6rpx;
 }
 
-.project_info_other {
+.recruitment_info_other {
   font-size: 24rpx;
   margin-top: 6rpx;
   margin-bottom: 6rpx;
@@ -90,13 +90,13 @@
   color: #7f8c8d;
 }
 
-.project_info_ft {
+.recruitment_info_ft {
   height: 100rpx;
   display: flex;
   align-items: center;
 }
 
-.project_info_class_credit {
+.recruitment_info_class_credit {
   font-size: 24rpx;
   justify-content: center;
   color: #7f8c8d;

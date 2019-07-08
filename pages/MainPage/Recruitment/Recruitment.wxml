@@ -1,2 +1,23 @@
 <!--pages/MainPage/Recruitment/Recruitment.wxml-->
-<text>pages/MainPage/Recruitment/Recruitment.wxml</text>
+<form bindsubmit="formSubmit" class='feedback_container' bindreset='formReset'>
+  <input name="name" type='text' class='input_style' placeholder="姓名"></input>
+  
+  <picker bindchange="bindPickerChange" name='sex' class='input_style' value="{{index}}" range="{{array}}" >
+  <view class="weui-input">{{array[index]}}</view>
+  </picker>
+
+  <input name="nation" type='text' class='input_style' placeholder="民族"></input>
+
+  <input name="youthleague" type='text' class='input_style' placeholder="学部（院）团支部"></input>
+  <input name="politic" type='text' class='input_style' placeholder="政治面貌"></input>
+
+  <input name="phone" type='text' class='input_style' placeholder="联系方式：手机号码"></input>
+
+  <input name="speciality" type='text' class='input_style' placeholder="特长"></input>
+  <textarea name='description' class='textarea_style' placeholder='1 个人简历与自我介绍  2 对编程和网站技术的了解'></textarea>
+ 
+  <button formType="submit" class='btn_submit'>
+    提交
+  </button>
+
+</form>

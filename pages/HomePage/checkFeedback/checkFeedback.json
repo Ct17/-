@@ -1,5 +1,6 @@
 {
-  "navigationBarTitleText": "项目",
+  "navigationBarTitleText": "查看留言",
   "enablePullDownRefresh": true,
+  
   "usingComponents": {}
 }

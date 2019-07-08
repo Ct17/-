@@ -33,7 +33,24 @@
     </view>  
   </view>  
 
-  <view class='MainPage'>
+    <view class='MainPage'>
+    <view class='MianPage_bd'>
+      <view class='item_container'>
+        <navigator url="feedback/feedback" class='item_content_container'>
+          <view class='item_hd_container'>
+            <image src='/images/feedback.png' class='item_image'></image>
+          </view>
+          <view class='item_bd_container'>留言反馈</view>
+          <view class='item_ft_container'>
+           <image src='/images/nav.png' class='item_image'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>  
+  </view>  
+
+
+  <!--<view class='MainPage'>
     <view class='MianPage_bd'>
       <view class='item_container'>
         <navigator url="interview/interview" class='item_content_container'>
@@ -47,9 +64,9 @@
         </navigator>
       </view>
     </view>  
-  </view> 
+  </view> -->
 
-  <view class='MainPage'>
+  <!--<view class='MainPage'>
     <view class='MianPage_bd'>
       <view class='item_container'>
         <navigator url="member/member" class='item_content_container'>
@@ -62,8 +79,8 @@
           </view>
         </navigator>
       </view>
-    </view>  
-  </view>   
+    </view> 
+  </view>   --> 
 
 
 </view>

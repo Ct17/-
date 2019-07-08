@@ -1,0 +1,35 @@
+<!--pages/HomePage/checkRecruitment/checkRecruitment.wxml-->
+<block wx:if="{{hasrecruitment}}">
+  <view class="recruitment_info_container">
+    <view wx:for="{{recruitment}}" class="recruitment_info_box">
+      <view class="recruitment_info_inside">
+        <view class="recruitment_info_hd">
+          <view class='recruitment_info_name'>
+            <view class='recruitment_info_class_name'>{{item.name}} {{item.sex}} {{item.nation}} {{item.youthleague}} {{item.politic}}</view>
+          </view>
+        </view>
+        <view class="recruitment_info_ft">
+          <view class='recruitment_info_other'>
+            <text decode="{{true}}" space="{{true}}">{{item.speciality}}    {{item.description}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="recruitment_info_container">
+    <view class="recruitment_info_box">
+      <view class="recruitment_info_inside">
+        <view class="recruitment_info_hd">
+          <view class='recruitment_info_name'>
+            <view class='recruitment_info_class_name'>暂无信息</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+
+
+

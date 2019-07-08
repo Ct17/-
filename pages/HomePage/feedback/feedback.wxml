@@ -1,17 +1,11 @@
-<!--pages/projectaApply/projectApply.wxml-->
+<!--pages/HomePage/feedback/feedback.wxml-->
 <form bindsubmit="formSubmit" class='feedback_container' bindreset='formReset'>
-  <input name="projectName" type='text' class='input_style' placeholder="项目名称"></input>
 
-  <input name="projectLeader" type='text' class='input_style' placeholder="活动负责人"></input>
+  <input name="name" type='text' class='input_style' placeholder="反馈人/部门"></input>
 
-  <input name="phone" type='text' class='input_style' placeholder="联系方式：手机号码"></input>
+  <input name="phone" type='text' class='input_style' placeholder="联系方式"></input>
 
-  <picker mode="date" value="{{date}}" name="date" class='input_style' start="2019-07-01" end="2025-09-01" bindchange="bindDateChange">
-  <view class="weui-input">截止日期 {{date}}</view>
-  </picker>
-
-  <input name="applyDepartment" type='text' class='input_style' placeholder="申请部门"></input>
-  <textarea name='description' class='textarea_style' placeholder='项目描述:网站设计要求，用途，备注要求及说明'></textarea>
+  <textarea name='description' class='textarea_style' placeholder='留言/问题描述'></textarea>
   <!--<input name="image_net_src1" type='text' class='input_style' value='{{image_net_src1}}' maxlength = '-1' hidden='true'></input>
   <input name="image_net_src2" type='text' class='input_style' value='{{image_net_src2}}' maxlength = '-1' hidden='true'></input>
   <input name="image_net_src3" type='text' class='input_style' value='{{image_net_src3}}' maxlength = '-1' hidden='true'></input>

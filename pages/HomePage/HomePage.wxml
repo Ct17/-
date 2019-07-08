@@ -4,7 +4,7 @@
   <open-data type="userNickName"></open-data>
 </view>
 <view class='HomePage_container'>
-    <view class='HomePage'>
+   <!-- <view class='HomePage'>
     <view class='HomePage_bd'>
       <view class='item_container'>
         <navigator url="MyProject/MyProject" class='item_content_container'>
@@ -18,9 +18,9 @@
         </navigator>
       </view>
     </view>  
-  </view>  
+  </view>  -->
 
-      <view class='HomePage'>
+   <!-- <view class='HomePage'>
     <view class='HomePage_bd'>
       <view class='item_container'>
         <navigator url="InsertMember/InsertMember" class='item_content_container'>
@@ -34,7 +34,54 @@
         </navigator>
       </view>
     </view>  
+  </view> -->
+
+  <view class='HomePage'>
+    <view class='HomePage_bd'>
+      <view class='item_container'>
+        <navigator url="checkRecruitment/checkRecruitment" class='item_content_container'>
+          <view class='item_hd_container'>
+            <image src='/images/checkrecruitment.png' class='item_image'></image>
+          </view>
+          <view class='item_bd_container'>查看招新</view>
+          <view class='item_ft_container'>
+           <image src='/images/nav.png' class='item_image'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>  
+  </view>
+  
+  <view class='HomePage'>
+    <view class='HomePage_bd'>
+      <view class='item_container'>
+        <navigator url="checkFeedback/checkFeedback" class='item_content_container'>
+          <view class='item_hd_container'>
+            <image src='/images/checkfeedback.png' class='item_image'></image>
+          </view>
+          <view class='item_bd_container'>查看留言</view>
+          <view class='item_ft_container'>
+           <image src='/images/nav.png' class='item_image'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>  
   </view> 
 
+  <view class='HomePage'>
+    <view class='HomePage_bd'>
+      <view class='item_container'>
+        <navigator url="management/management" class='item_content_container'>
+          <view class='item_hd_container'>
+            <image src='/images/management.png' class='item_image'></image>
+          </view>
+          <view class='item_bd_container'>项目管理</view>
+          <view class='item_ft_container'>
+           <image src='/images/nav.png' class='item_image'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>  
+  </view> 
 
 </view>

@@ -1,7 +1,6 @@
-/* pages/HomePage/InsertMember/InsertMember.wxss */
 /* pages/HomePage/feedback/feedback.wxss */
 
-.insertmember_container {
+.feedback_container {
   width: 750rpx;
   display: flex;
   justify-content: center;

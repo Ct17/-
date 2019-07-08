@@ -1,4 +1,5 @@
-// pages/InsertMember/InsertMember.js
+// pages/HomePage/feedback/feedback.js
+var FeedbackUrl = require('../../../config.js').FeedbackUrl;
 Page({
 
   /**
@@ -62,5 +63,33 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  formSubmit: function (e) {
+    console.log(e)
+    wx.showLoading({
+      title: '正在上传',
+    })
+    wx.getStorage({
+      key: 'openid',
+      success: function (res) {
+        wx.request({
+          url: FeedbackUrl,
+          data: {
+            openid: res.data,
+            name: e.detail.value.name,
+            phone: e.detail.value.phone,
+            description: e.detail.value.description
+          },
+          success: function (res1) {
+            console.log(res1.data);
+            wx.hideLoading();
+            wx.showToast({
+              title: '上传成功',
+            })
+          }
+        })
+      },
+    })
+  }  
 })

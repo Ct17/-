@@ -1,24 +1,19 @@
-// pages/projectaApply/projectApply.js
-
-var ProjectApplyUrl = require('../../../config.js').ProjectApplyUrl;
+// pages/HomePage/feedback/feedback.js
+var FeedbackUrl = require('../../../config.js').FeedbackUrl;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    date: '2019-07-01',
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    function bindDateChange(e) {
-      this.setData({
-        date: e.detail.value
-      })
-    }
+
   },
 
   /**
@@ -69,11 +64,7 @@ Page({
   onShareAppMessage: function () {
 
   },
-  bindDateChange(e) {
-    this.setData({
-      date: e.detail.value
-    })
-  },
+
   formSubmit: function (e) {
     console.log(e)
     wx.showLoading({
@@ -83,14 +74,11 @@ Page({
       key: 'openid',
       success: function (res) {
         wx.request({
-          url:ProjectApplyUrl,
+          url: FeedbackUrl,
           data: {
             openid: res.data,
-            projectName: e.detail.value.projectName,
-            projectLeader: e.detail.value.projectLeader,
+            name: e.detail.value.name,
             phone: e.detail.value.phone,
-            date: e.detail.value.date,
-            applyDepartment: e.detail.value.applyDepartment,
             description: e.detail.value.description
           },
           success: function (res1) {
@@ -103,6 +91,5 @@ Page({
         })
       },
     })
-
-  }
+  }  
 })

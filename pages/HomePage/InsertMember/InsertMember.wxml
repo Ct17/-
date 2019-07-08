@@ -1,2 +1,45 @@
-<!--pages/HomePage/InsertMember/InsertMember.wxml-->
-<text>pages/HomePage/InsertMember/InsertMember.wxml</text>
+<!--pages/HomePage/InsertMember/InsertMember.wx--> 
+<form bindsubmit="formSubmit" class='insertmember_container' bindreset='formReset'>
+
+  <input name="name" type='text' class='input_style' placeholder=""></input>
+
+  <input name="phone" type='text' class='input_style' placeholder="联系方式"></input>
+
+  <textarea name='description' class='textarea_style' placeholder='留言/问题描述'></textarea>
+  <!--<input name="image_net_src1" type='text' class='input_style' value='{{image_net_src1}}' maxlength = '-1' hidden='true'></input>
+  <input name="image_net_src2" type='text' class='input_style' value='{{image_net_src2}}' maxlength = '-1' hidden='true'></input>
+  <input name="image_net_src3" type='text' class='input_style' value='{{image_net_src3}}' maxlength = '-1' hidden='true'></input>
+  <view class='add_image_container'>
+    <view class='image_container'>
+      <view wx:if="{{image_src1}}">
+        <image src="{{image_src1}}" class="image" mode="aspectFill"></image>
+      </view>
+      <view wx:else bindtap="chooseImage" data-name='image1'>
+        <image src="/images/plus.png" class="image"></image>
+      </view>
+    </view>
+    <view class='image_container'>
+      <view wx:if="{{image_src2}}">
+        <image src="{{image_src2}}" class="image" mode="aspectFill"></image>
+      </view>
+      <view wx:else bindtap="chooseImage" data-name='image2'>
+        <image src="/images/plus.png" class="image"></image>
+      </view>
+    </view>
+    <view class='image_container'>
+      <view wx:if="{{image_src3}}">
+        <image src="{{image_src3}}" class="image" mode="aspectFill"></image>
+      </view>
+      <view wx:else bindtap="chooseImage" data-name='image3'>
+        <image src="/images/plus.png" class="image"></image>
+      </view>
+    </view>
+  </view>-->
+  <button formType="submit" class='btn_submit'>
+    提交
+  </button>
+  <!--<button formType="reset" class='btn_submit button_danger'>
+    清空
+  </button>-->
+</form>
+ 

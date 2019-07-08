@@ -1,11 +1,11 @@
-<!--pages/ShowProject/ShowProject.wxml-->
+<!--pages/HomePage/management/management.wxml-->
 <block wx:if="{{hasproject}}">
   <view class="project_info_container">
     <view wx:for="{{project}}" class="project_info_box">
       <view class="project_info_inside">
         <view class="project_info_hd">
           <view class='project_info_name'>
-            <view class='project_info_class_name'>{{item.projectName}} {{item.projectLeader}} {{item.date}} 状态：{{item.state}}</view>
+            <view class='project_info_class_name'>ID:{{item.number}} {{item.projectName}} {{item.projectLeader}} {{item.date}} 状态：{{item.state}}</view>
           </view>
         </view>
         <view class="project_info_ft">
@@ -32,3 +32,13 @@
   </view>
 </block>
 
+
+<form bindsubmit="formSubmit" class='feedback_container' bindreset='formReset'>
+  <input name="pass" type='text' class='input_style' placeholder="请输入一个审核通过项目的ID"></input>
+  <button formType="submit" class='btn_submit'>通过审核</button>
+</form>
+
+<form bindsubmit="formSubmit1" class='feedback_container' bindreset='formReset'>
+  <input name="finish" type='text' class='input_style' placeholder="请输入一个完成项目的ID"></input>
+  <button formType="submit" class='btn_submit'>项目完成</button>
+</form>
